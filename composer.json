@@ -1,0 +1,14 @@
+{
+  "name": "afbora/moka-php",
+  "description": "Moka POS php implementation",
+  "require": {
+    "composer/installers": "^1.3"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Ahmet Bora",
+      "email": "byybora@gmail.com"
+    }
+  ]
+}
