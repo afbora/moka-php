@@ -1,6 +1,5 @@
 {
     "name": "afbora/moka-php",
-    "version": "1.0",
     "type": "library",
     "description": "PHP client library for integration access to MOKA api payment gateway",
     "homepage": "https://www.pixelturk.net",
