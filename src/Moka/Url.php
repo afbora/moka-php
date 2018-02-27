@@ -13,6 +13,8 @@ class Url
     
     const PAYMENT_URL = '/PaymentDealer/DoDirectPayment';
     const PAYMENT_THREEDSECURE_URL = '/PaymentDealer/DoDirectPaymentThreeD';
+    const CANCEL_URL = '/PaymentDealer/DoVoid';
+    const REFUND_URL = '/PaymentDealer/DoCreateRefundRequest';
     
     public static function getPayment()
     {
@@ -22,6 +24,16 @@ class Url
     public static function getThreeDSecurePayment()
     {
         return self::convert(self::PAYMENT_THREEDSECURE_URL);
+    }
+    
+    public static function getCancel()
+    {
+        return self::convert(self::CANCEL_URL);
+    }
+    
+    public static function getRefund()
+    {
+        return self::convert(self::REFUND_URL);
     }
     
     private static function convert($url)

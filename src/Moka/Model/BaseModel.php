@@ -14,7 +14,7 @@ class BaseModel
     
     public function isSuccess()
     {
-        if($this->response and isset($this->response->Data) and filter_validate_boolean($this->response->Data->IsSuccessful))
+        if($this->response and isset($this->response->Data) and filter_var($this->response->Data->IsSuccessful, FILTER_VALIDATE_BOOLEAN))
         {
             return true;
         }
