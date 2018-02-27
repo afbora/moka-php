@@ -14,7 +14,7 @@ class BaseModel
     
     public function isSuccess()
     {
-        if($this->response and $this->response->ResultCode == "Success")
+        if($this->response and isset($this->response->Data) and filter_validate_boolean($this->response->Data->IsSuccessful))
         {
             return true;
         }
