@@ -27,5 +27,8 @@
         "psr-4": {
             "": "src/"
         }
+    },
+    "config": {
+        "preferred-install": "dist"
     }
 }
