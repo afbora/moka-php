@@ -1,1 +1,8 @@
-/.git/
+# Ignore Git here
+.git
+
+# Vendor Git
+/vendor/**/.git
+
+# But not these files...
+!.gitignore
